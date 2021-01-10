@@ -1,0 +1,41 @@
+@import 'common/mixins'
+
+.filter
+    padding: 50px 0
+    font-family: Montserrat
+
+.filter__container
+    display: flex
+    max-width: 1160px
+    margin: 0 auto
+
+    +media(1200px)
+        max-width: 865px
+
+    +media(991px)
+        max-width: 570px
+
+    +media(640px)
+        flex-direction: column
+        max-width: 270px
+
+.filter__sidebar
+    flex-basis: 240px
+    margin-right: 60px
+
+    +media(640px)
+        width: 100%
+        margin-bottom: 40px
+
+.filter__content
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-column-gap: 25px
+    grid-row-gap: 25px
+    align-items: start
+
+    +media(1200px)
+        grid-template-columns: 1fr 1fr
+
+    +media(991px)
+        grid-template-columns: 1fr

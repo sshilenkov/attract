@@ -1,0 +1,43 @@
+@import 'common/variables'
+    
+.price
+    .ant-slider
+        margin-bottom: 30px
+
+    .ant-slider-rail
+        background-color: #d6d9e1
+
+    .ant-slider-track
+        background-color: #1cb8ff
+
+    .ant-slider-handle
+        border-color: #1cb8ff
+
+.price__footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.price__limit
+    color: $dark-color
+    font-size: 16px
+    font-weight: bold
+    text-transform: uppercase
+
+.price__min
+    &::after
+        content: '-'
+        display: inline-block
+        margin: 0 15px
+
+.price__button
+    padding: 12px 25px
+    border: none
+    background-color: #1cb8ff
+    color: #fff
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+
+    &:hover
+        cursor: pointer
